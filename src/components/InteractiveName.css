@@ -1,0 +1,36 @@
+
+.logo-container {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+  font-weight: 900;
+  font-size: 4rem;
+  user-select: none;
+  line-height: 1; 
+}
+
+.logo-text {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.logo-layer-bottom {
+  position: absolute;
+  z-index: 1;
+  background: rgb(109, 105, 105);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; 
+}
+
+
+.logo-layer-top {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  transition: opacity 0.2s ease; 
+}
