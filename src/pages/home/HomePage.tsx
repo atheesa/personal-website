@@ -1,25 +1,28 @@
 import Header from "../../components/Header";
 import "./HomePage.css";
 import { useOnScreen } from "../../utils/useOnScreen";
+import ProjectCard from "../../components/ProjectCard";
 
 function HomePage() {
   const { ref: eduRef, isIntersecting: eduVisible } = useOnScreen();
   const { ref: techRef, isIntersecting: techVisible } = useOnScreen();
   const { ref: contactRef, isIntersecting: contactVisible } = useOnScreen();
+  const projects = [
+  { id: 1, title: "Graph Query Lang", color: "#6366f1", img: "" },
+  { id: 2, title: "Runway Sim", color: "#a855f7", img: "" },
+  { id: 3, title: "AI Lunar Lander", color: "#ec4899", img: "" },
+  { id: 4, title: "NLP Research", color: "#14b8a6", img: "" },
+  { id: 5, title: "Self-Driving Car", color: "#f97316", img: "" },
+  { id: 6, title: "Tetris PvP", color: "#3b82f6", img: "" },
+];
+
   return (
     <>
       <Header></Header>
       <div className="project-grid">
-        <div className="project-container">PROJECT 1</div>
-        <div className="project-container">PROJECT 2</div>
-
-        <div className="project-container">PROJECT 3</div>
-
-        <div className="project-container">PROJECT 4</div>
-
-        <div className="project-container">PROJECT 5</div>
-
-        <div className="project-container">PROJECT 6</div>
+        {projects.map((p) => (
+          <ProjectCard key={p.id} projectMeta={p}/>
+        ))}
       </div>
 
       <div

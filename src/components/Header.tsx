@@ -1,5 +1,5 @@
 import './header.css'
-import InteractiveName from './InteractiveName';
+import InteractiveName from '../utils/InteractiveName';
 
 
 function Header(){
@@ -8,7 +8,7 @@ function Header(){
             <div className="left-section">
             </div>
             <div className="middle-section">
-                <button className="task-bar-button"><InteractiveName name={"ATH"}></InteractiveName></button>
+                <button className="task-bar-button"><InteractiveName name={"ATHEESA"}></InteractiveName></button>
             </div>
             <div className="right-section">
             </div>

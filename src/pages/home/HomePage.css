@@ -53,37 +53,31 @@
 .project-container:nth-child(6) { animation-delay: 0.6s; }
 
 
-/* 1. The Starting State (Hidden & Moved) */
 .animate-on-scroll {
     opacity: 0;
-    transform: translateY(30px); /* Start 30px down */
+    transform: translateY(30px); 
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    will-change: opacity, transform; /* Browser optimization hint */
+    will-change: opacity, transform; 
 }
 
-/* 2. The Ending State (Visible & Reset) */
-/* 1. Shared styling for all your bottom sections */
 .education-container, 
 .technologies-container, 
 .contact-container {
-    width: 100%;             /* Allow it to shrink on mobile */
-    max-width: 800px;        /* Stop it from getting too wide on desktop */
-    margin: 50px auto;       /* 'auto' on left/right centers the block */
+    width: 100%; 
+    max-width: 800px; 
+    margin: 50px auto;
     padding: 40px;
     
-    /* Visuals (Optional - matches your dark theme) */
     background-color: #242424; 
     border: 1px solid #444;
     border-radius: 8px;
-    text-align: center;      /* Centers the text inside */
+    text-align: center;
 }
 
-/* 2. Fix for the slide animation conflict */
-/* This ensures that when the element becomes visible, ALL movement resets to the center */
+
 .animate-on-scroll.is-visible {
     opacity: 1;
-    transform: translate(0, 0); /* Resets both X and Y movements */
+    transform: translate(0, 0);
 }
-/* Optional: Different directions */
 .slide-in-left { transform: translateX(-50px); }
 .slide-in-right { transform: translateX(50px); }
