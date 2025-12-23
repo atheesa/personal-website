@@ -2,6 +2,7 @@ import Header from "../../components/Header";
 import "./HomePage.css";
 import { useOnScreen } from "../../utils/useOnScreen";
 import ProjectCard from "../../components/ProjectCard";
+import StarBackground from "../../components/StarBackground"; 
 
 function HomePage() {
   const { ref: eduRef, isIntersecting: eduVisible } = useOnScreen();
@@ -18,6 +19,7 @@ function HomePage() {
 
   return (
     <>
+    <StarBackground />
       <Header></Header>
       <div className="project-grid">
         {projects.map((p) => (
