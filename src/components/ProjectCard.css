@@ -1,3 +1,10 @@
+.unstyled-button {
+all: unset;
+cursor: pointer;
+}
+.project-card-link {
+    text-decoration: none;
+}
 .project-container {
     position: relative;
     background-color: #333;
