@@ -17,7 +17,7 @@ function ProjectCard({projectMeta} : ProjectMetaProps ) {
     <Link className="project-card-link" to={`/project/${projectMeta.id}`}>
     <div className="project-container">
       <div className="card-content">
-        <h2>{projectMeta.title}</h2>
+        <h2 className="project-title">{projectMeta.title}</h2>
       
         <div className="project-link-button">View Project</div>
       </div>

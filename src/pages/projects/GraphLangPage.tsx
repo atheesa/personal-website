@@ -249,6 +249,17 @@ Pattern : NodePattern                           { PtrnNode $1 }
             </pre>
           </div>
         </section>
+
+        <div className="cta-section">
+            <a 
+                href="https://github.com/atheesa/haskellQueryLanguage" 
+                target="_blank" 
+                rel="noreferrer" 
+                className="github-button-large github-title"
+            >
+                View Full Source Code on GitHub
+            </a>
+        </div>
       </div>
     </>
   );

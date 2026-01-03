@@ -50,6 +50,13 @@
     color: #d4d4d4;
     border: 1px solid #444;
 }
+.group-badge {
+    background: rgba(236, 72, 153, 0.2);
+    border: 1px solid #ec4899;
+    color: #fbcfe8;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.2);
+}
 
 .section {
     margin-bottom: 100px;
@@ -166,7 +173,6 @@
     }
 }
 
-
 .cta-section {
     text-align: center;
     margin-top: 80px;
@@ -193,6 +199,7 @@
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
 .github-title {
     font-size: 20px;
     font-weight: 800;
