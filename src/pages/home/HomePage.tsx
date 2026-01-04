@@ -72,27 +72,35 @@ function HomePage() {
     <>
       {/* {<StarBackground />} */}
       <Header></Header>
-      <div className="home-hero-container">
-        <div
-          ref={heroRef}
+     <div className="home-hero-container">
+        <div 
+          ref={heroRef} 
           className={`home-hero-content ${heroVisible ? "is-visible" : ""}`}
         >
-          <h1>Nantheesan Raveenthiran</h1>
-          <h2>Software Engineer & Researcher</h2>
-          <p>
-            I build high-performance systems and scalable applications. First
-            Class Honors graduate with a specialization in
-            <strong> Compiler Design</strong>, <strong>Machine Learning</strong>
-            , and <strong>Full-Stack Engineering</strong>.
-          </p>
-          <div className="hero-actions">
-            <a href="#projects" className="primary-btn" onClick={handleScrollToProjects}>
-              View Projects
-            </a>
-            <a href="/cv.pdf" target="_blank" className="secondary-btn">
-              Download CV
-            </a>
-          </div>
+            <div className="hero-visual">
+                <div className="profile-img-wrapper">
+                    <img src="/images/profile.jpg" alt="Nantheesan Raveenthiran" />
+                </div>
+            </div>
+
+            <div className="hero-text">
+                <h1>Nantheesan Raveenthiran</h1>
+                <h2>Software Engineer & Researcher</h2>
+                <p>
+                    I build high-performance systems and scalable applications. 
+                    First Class Honors graduate with a specialization in 
+                    <strong> Compiler Design</strong>, <strong>Machine Learning</strong>, 
+                    and <strong>Full-Stack Engineering</strong>.
+                </p>
+                <div className="hero-actions">
+                    <a href="#projects" className="primary-btn" onClick={handleScrollToProjects}>
+                        View Projects
+                    </a>
+                    <a href="/cv.pdf" target="_blank" className="secondary-btn">
+                        Download CV
+                    </a>
+                </div>
+            </div>
         </div>
       </div>
       <div id="projects" className="project-grid">
