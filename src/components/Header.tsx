@@ -4,6 +4,7 @@ import InteractiveName from '../utils/InteractiveName';
 
 function Header(){
     return (
+        <>        
         <div className="header">
             <div className="left-section">
             </div>
@@ -14,6 +15,8 @@ function Header(){
             </div>
 
         </div>
+        </>
+
     )
 } 
 

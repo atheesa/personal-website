@@ -21,7 +21,7 @@ const TerminalWindow = ({ children }: { children: React.ReactNode }) => {
         <div style={{ width: 12, height: 12, borderRadius: '50%', background: '#ff5f56' }} />
         <div style={{ width: 12, height: 12, borderRadius: '50%', background: '#ffbd2e' }} />
         <div style={{ width: 12, height: 12, borderRadius: '50%', background: '#27c93f' }} />
-        <span style={{ marginLeft: '10px', color: '#888', fontSize: '0.8rem' }}>bash — GraphQueryLang</span>
+        <span style={{ marginLeft: '10px', color: '#888', fontSize: '0.8rem' }}></span>
       </div>
       
       <div style={{ padding: '20px', color: '#d4d4d4', lineHeight: '1.6' }}>

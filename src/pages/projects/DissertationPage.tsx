@@ -17,6 +17,7 @@ function DissertationPage() {
             <h2 className="subtitle">Early Identification of Retracted Papers using Graph Neural Networks & NLP</h2>
             
             <div className="tech-badges">
+                <span className="badge highlight-badge">Dissertation</span>
                 <span className="badge highlight-badge">Machine Learning</span>
                 <span className="badge">Python (Pandas/Scikit-Learn)</span>
                 <span className="badge">Graph Theory (NetworkX)</span>

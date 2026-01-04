@@ -1,4 +1,3 @@
-
 .page-container {
     max-width: 900px;
     margin: 100px auto;
@@ -10,7 +9,7 @@
     font-size: 2.8rem;
     font-weight: 800;
     margin-bottom: 10px;
-    background: linear-gradient(to right, #4ade80, #3b82f6); 
+    background: linear-gradient(to right, #60a5fa, #c084fc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -31,9 +30,9 @@
 }
 
 .highlight-badge {
-    background: rgba(74, 222, 128, 0.15);
-    border: 1px solid #1e293b;
-    border-left: 4px solid #3b82f6;
+    background: rgba(96, 165, 250, 0.15);
+    border: 1px solid #60a5fa;
+    color: #60a5fa;
     font-weight: 600;
 }
 
@@ -58,7 +57,7 @@
     padding: 25px;
     border-radius: 12px;
     border: 1px solid #1e293b;
-    border-left: 4px solid #3b82f6;
+    border-left: 4px solid #c084fc;
     transition: transform 0.2s;
 }
 
@@ -79,21 +78,7 @@
     margin: 0;
 }
 
-.finding-block {
-    margin-bottom: 30px;
-    padding: 20px;
-    background: #1e1e1e;
-    border-radius: 8px;
-    border-top: 2px solid #1d232c;
-}
-
-.finding-block h3 {
-    color: #fff;
-    margin: 0 0 10px 0;
-    font-family: 'Fira Code', monospace;
-}
-
-.keyword { color: #c678dd; }
+.keyword { color: #c678dd; } 
 .string { color: #98c379; }
-.comment { color: #5c6370; font-style: italic; }
+.comment { color: #5c6370; font-style: italic; } 
 .code-line { margin-bottom: 2px; }
