@@ -12,7 +12,7 @@ function HomePage() {
   { id: 1, title: "Graph Query Lang", color: "#6366f1", img: "" },
   { id: 2, title: "Runway Sim", color: "#a855f7", img: "" },
   { id: 3, title: "Personal Portfolio", color: "#ec4899", img: "" },
-  { id: 4, title: "NLP Research", color: "#14b8a6", img: "" },
+  { id: 4, title: "ML Scientometrics Research", color: "#14b8a6", img: "" },
   { id: 5, title: "Self-Driving Car", color: "#f97316", img: "" },
   { id: 6, title: "Tetris PvP", color: "#3b82f6", img: "" },
 ];
