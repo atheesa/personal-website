@@ -197,16 +197,6 @@ Generated Meta-Net: 12,000 Nodes, 60,000 Weighted Semantic Edges.`}
             </p>
         </section>
 
-                <div className="cta-section">
-            <a 
-                href="https://github.com/atheesa/part3-research-project" 
-                target="_blank" 
-                rel="noreferrer" 
-                className="github-button-large github-title"
-            >
-                View Full Source Code on GitHub
-            </a>
-        </div>
 
       </div>
     </>
