@@ -6,7 +6,6 @@ import "./TetrECSPage.css";
 function TetrECSPage() {
   return (
     <>
-      <Header />
       
       <div className="page-container">
         

@@ -6,7 +6,6 @@ import "./OrchestraPage.css";
 function OrchestraPage() {
   return (
     <>
-      <Header />
       
       <div className="page-container">
         

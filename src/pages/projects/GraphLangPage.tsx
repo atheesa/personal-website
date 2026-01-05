@@ -6,14 +6,12 @@ import "./GraphLangPage.css";
 function GraphLangPage() {
   return (
     <>
-      <Header />
 
       <div className="page-container">
-        <div className="hero-section">
-          <Link to="/" className="back-link">
-            ← Back to Projects
-          </Link>
-
+        <div className="hero-section ">
+<Link to="/#projects" className="back-link stagger-0">
+        ← Back to Projects
+    </Link>
           <h1 className="title">Graph Query Language (GQL)</h1>
 
           <div className="tech-badges">
@@ -82,7 +80,7 @@ function GraphLangPage() {
                 decouples the query logic from the storage format.
               </p>
             </div>
-            <div className="arrow">→</div>
+            <div className="arch-arrow">→</div>
             <div className="arch-step">
               <h3>2. In-Memory Graph</h3>
               <span className="tool">Haskell ADT</span>
@@ -91,7 +89,7 @@ function GraphLangPage() {
                 structure containing validated <code>NodeGroups</code>.
               </p>
             </div>
-            <div className="arrow">→</div>
+            <div className="arch-arrow">→</div>
             <div className="arch-step">
               <h3>3. Execution Engine</h3>
               <span className="tool">State Machine</span>

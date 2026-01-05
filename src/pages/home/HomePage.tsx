@@ -1,15 +1,16 @@
+import React from "react";
 import Header from "../../components/Header";
 import "./HomePage.css";
 import { useOnScreen } from "../../utils/useOnScreen";
 import ProjectCard from "../../components/ProjectCard";
-import StarBackground from "../../components/StarBackground";
+// import StarBackground from "../../components/StarBackground";
 
 function HomePage() {
   const { ref: eduRef, isIntersecting: eduVisible } = useOnScreen();
   const { ref: techRef, isIntersecting: techVisible } = useOnScreen();
   const { ref: contactRef, isIntersecting: contactVisible } = useOnScreen();
   const { ref: heroRef, isIntersecting: heroVisible } = useOnScreen();
-  const { ref: skillRef, isIntersecting: skillVisible } = useOnScreen();
+
   const projects = [
     {
       id: 1,
@@ -63,88 +64,139 @@ function HomePage() {
 
   const handleScrollToProjects = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const projectsSection = document.getElementById('projects');
+    const projectsSection = document.getElementById("projects");
     if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth' });
+      projectsSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const handleScrollToEducation = () => {
+    if (eduRef.current) {
+      eduRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <>
-      {/* {<StarBackground />} */}
-      <Header></Header>
-     <div className="home-hero-container">
-        <div 
-          ref={heroRef} 
+      {/* <StarBackground /> */}
+      {/* <Header /> */}
+
+      <div className="home-hero-container">
+        <div
+          ref={heroRef}
           className={`home-hero-content ${heroVisible ? "is-visible" : ""}`}
         >
-            <div className="hero-visual">
-                <div className="profile-img-wrapper">
-                    <img src="/images/profile.jpg" alt="Nantheesan Raveenthiran" />
-                </div>
+          <div className="hero-visual">
+            <div className="profile-img-wrapper">
+              <img src="/images/profile.jpg" alt="Nantheesan Raveenthiran" />
             </div>
+          </div>
 
-            <div className="hero-text">
-                <h1>Nantheesan Raveenthiran</h1>
-                <h2>Software Engineer & Researcher</h2>
-                <p>
-                    I build high-performance systems and scalable applications. 
-                    First Class Honors graduate with a specialization in 
-                    <strong> Compiler Design</strong>, <strong>Machine Learning</strong>, 
-                    and <strong>Full-Stack Engineering</strong>.
-                </p>
-                <div className="hero-actions">
-                    <a href="#projects" className="primary-btn" onClick={handleScrollToProjects}>
-                        View Projects
-                    </a>
-                    <a href="/cv.pdf" target="_blank" className="secondary-btn">
-                        Download CV
-                    </a>
-                </div>
+          <div className="hero-text">
+            <h1>Nantheesan Raveenthiran</h1>
+            <h2>Software Engineer & Researcher</h2>
+
+            {/* <h3 className="hero-degree">
+              BSc Computer Science{" "}
+              <span className="text-gold">First Class Honors</span>
+            </h3> */}
+
+            <p>
+              Building high-performance systems and scalable applications.
+              Specializing in <strong>Compiler Design</strong>,{" "}
+              <strong>Machine Learning</strong>, and{" "}
+              <strong>Full-Stack Engineering</strong>.
+            </p>
+
+            <div className="hero-actions">
+              <a
+                href="#projects"
+                className="primary-btn"
+                onClick={handleScrollToProjects}
+              >
+                View Projects
+              </a>
+              <a href="/CV.pdf" download="CV.pdf" className="secondary-btn">
+                Download CV
+              </a>
             </div>
+          </div>
         </div>
       </div>
+
       <div id="projects" className="project-grid">
         {projects.map((p) => (
           <ProjectCard key={p.id} projectMeta={p} />
         ))}
       </div>
 
+      <div className="scroll-bridge">
+        <button
+          onClick={handleScrollToEducation}
+          className="scroll-down-btn"
+          aria-label="Scroll to Education"
+        >
+          <span className="mouse">
+            <span className="wheel"></span>
+          </span>
+          <span className="arrow"></span>
+        </button>
+      </div>
+
       <div
         ref={eduRef}
-        className={`education-container animate-on-scroll ${
+        className={`info-section education-container animate-on-scroll ${
           eduVisible ? "is-visible" : ""
         }`}
       >
         <h2>Education</h2>
-        <p>
-          University of Southampton --- First Class with Honors --- BSc Computer
-          Science
-        </p>
-        <p>A-level Physics --- A*</p>
-        <p>A-level Maths --- A*</p>
-        <p>A-level Further Maths --- A*</p>
+        <div className="edu-item">
+          <h3>University of Southampton</h3>
+          <p className="highlight">
+            BSc Computer Science:{" "}
+            <span className="text-gold">First Class Honors</span>
+          </p>
+        </div>
+
+        <div className="edu-grades">
+          <div className="grade-badge">
+            A-Level Physics: <span className="text-gold">A*</span>
+          </div>
+          <div className="grade-badge">
+            A-Level Maths: <span className="text-gold">A*</span>
+          </div>
+          <div className="grade-badge">
+            Further Maths: <span className="text-gold">A*</span>
+          </div>
+        </div>
       </div>
 
       <div
         ref={techRef}
-        className={`technologies-container animate-on-scroll slide-in-left ${
+        className={`info-section technologies-container animate-on-scroll slide-in-left ${
           techVisible ? "is-visible" : ""
         }`}
       >
         <h2>CV</h2>
-        <button> Downl</button>
+        <a href="/CV.pdf" download="CV.pdf" className="primary-btn small-btn">
+          Download Full Resume
+        </a>
       </div>
 
       <div
         ref={contactRef}
-        className={`contact-container animate-on-scroll ${
+        className={`info-section contact-container animate-on-scroll ${
           contactVisible ? "is-visible" : ""
         }`}
       >
         <h2>Contact</h2>
-        <p>nantheesanr@gmail.com +44 7411 292986</p>
+        <div className="contact-details">
+          <p>nantheesanr@gmail.com</p>
+          <p>+44 7411 292986</p>
+        </div>
       </div>
     </>
   );
 }
+
 export default HomePage;

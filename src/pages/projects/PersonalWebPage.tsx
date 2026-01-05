@@ -6,7 +6,6 @@ import "./PersonalWebPage.css";
 function PersonalWebPage() {
   return (
     <>
-      <Header />
       
       <div className="page-container">
         

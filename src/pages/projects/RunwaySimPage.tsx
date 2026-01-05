@@ -5,7 +5,6 @@ import "./RunwaySimPage.css";
 function RunwaySimPage() {
   return (
     <>
-      <Header />
 
       <div className="page-container">
         <div className="hero-section">
@@ -43,7 +42,7 @@ function RunwaySimPage() {
               <span className="tool">JavaFX Forms</span>
               <p>Controllers input runway parameters, obstacle dimensions, and displacement thresholds.</p>
             </div>
-            <div className="arrow">→</div>
+            <div className="arch-arrow">→</div>
             <div className="arch-step">
               <h3>Calculation</h3>
               <span className="tool">Logic Engine</span>
@@ -52,7 +51,7 @@ function RunwaySimPage() {
                 based on obstacle position.
               </p>
             </div>
-            <div className="arrow">→</div>
+            <div className="arch-arrow">→</div>
             <div className="arch-step">
               <h3>Visualization</h3>
               <span className="tool">Canvas Rendering</span>

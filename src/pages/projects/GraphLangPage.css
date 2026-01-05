@@ -126,7 +126,7 @@
     margin: 0;
 }
 
-.arrow {
+.arch-arrow {
     font-size: 2.5rem;
     color: #555;
     font-weight: bold;
@@ -201,3 +201,4 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+

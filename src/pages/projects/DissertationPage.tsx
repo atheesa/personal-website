@@ -6,7 +6,6 @@ import "./DissertationPage.css";
 function DissertationPage() {
   return (
     <>
-      <Header />
       
       <div className="page-container">
         
