@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../../components/Header";
 import "./HomePage.css";
 import { useOnScreen } from "../../utils/useOnScreen";
 import ProjectCard from "../../components/ProjectCard";

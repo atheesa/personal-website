@@ -1,4 +1,3 @@
-import Header from "../../components/Header";
 import TerminalWindow from "../../components/TerminalWindow";
 import { Link } from "react-router-dom";
 import "./OrchestraPage.css";

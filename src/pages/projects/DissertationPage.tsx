@@ -1,4 +1,3 @@
-import Header from "../../components/Header";
 import JupyterNotebook from "../../components/JupyterNotebook";
 import { Link } from "react-router-dom";
 import "./DissertationPage.css";
